@@ -24,6 +24,7 @@ npm start
 - [ ] Add Developers Page 
 - [ ] Backend Microservice that will mail all people interested in working in future Projects 
 - [ ] Microservice that will fetch projects from Github API
+
 More todos will be added later . . 
 
 ### Contributing
