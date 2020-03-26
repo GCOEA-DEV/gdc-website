@@ -9,7 +9,6 @@ git clone https://github.com/GCOEA-DEV/gdc-website.git
 cd into the directory and install all the dependencies
 ```
 npm install
-
 ``` 
 Run and preview the application
 ```
