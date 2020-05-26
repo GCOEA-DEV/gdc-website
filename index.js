@@ -19,6 +19,10 @@ app.get('/api/developers', (req, res) => {
         {
             id: 3,
             name: 'Nilay Ingle'
+        },
+        {
+            id: 4,
+            name: 'Pruthviraj Gite'
         }
     ]
     res.json(developers);
