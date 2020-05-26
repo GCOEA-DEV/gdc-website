@@ -16,7 +16,7 @@ npm start
 ```
 
 ### Todos
-- [ ] Split the project files into client and server
+- [X] Split the project files into client and server
 - [ ] Add Homepage
 - [ ] Add About page
 - [ ] Add Projects / Ideas

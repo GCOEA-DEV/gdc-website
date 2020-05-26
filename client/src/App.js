@@ -1,10 +1,12 @@
 import React from 'react';
+import Developers from './components/Developers';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello, World!</h1>
+      <h1>DEVELOPERS</h1>
+      <Developers />
     </div>
   );
 }
