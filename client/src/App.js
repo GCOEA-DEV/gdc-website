@@ -1,32 +1,44 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Home from './components/Home/Home';
-import About from './components/About/About';
-import Developers from './components/Developers/Developers';
+import React, { Component } from 'react';
+import Navbar from './components/Navbar/Navbar';
+import Sidedrawer from './components/Sidedrawer/Sidedrawer';
+import Backdrop from "./components/Backdrop";
+import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <Router>
-        <div>
-          <h2>Welcome to Gcoea Developers Website</h2>
-          <nav>
-            <ul>
-              <li><Link to={'/'}>Home</Link></li>
-              <li><Link to={'/about'}>About</Link></li>
-              <li><Link to={'/developers'}>Developers</Link></li>
-            </ul>
-          </nav>
-          <hr />
-          <Switch>
-              <Route exact path='/' component={Home} />
-              <Route path='/about' component={About} />
-              <Route path='/developers' component={Developers} />
-          </Switch>
-        </div>
-      </Router>
-    </div>
-  );
+class App extends Component {
+    state = {
+        isDrawerOpen: false
+    };
+
+    drawerToggleHandler = () => {
+        this.setState(prevState => {
+            return { isDrawerOpen: !prevState.isDrawerOpen };
+        });
+    }
+
+    backdropClickHandler = () => {
+        this.setState({ isDrawerOpen: false });
+    };
+
+    render() {
+
+        let sidedrawer, backdrop; 
+
+        if (this.state.isDrawerOpen) {
+            sidedrawer = <Sidedrawer />
+            backdrop = <Backdrop click={this.backdropClickHandler} />
+        }
+
+        return (
+            <div className="App">
+                <Navbar drawerToggleHandler={this.drawerToggleHandler} />
+                { sidedrawer }
+                { backdrop }
+                <div className="main">
+                    Welcome to Gcoea Developers Club 🚀
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;

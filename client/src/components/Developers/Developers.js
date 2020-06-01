@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Developers.css';
 
 class Developers extends Component {
     constructor() {
@@ -17,7 +18,7 @@ class Developers extends Component {
 
     render() {
         return (
-            <div>
+            <div className="developers">
                 <ul>
                     {
                         this.state.developers.map(developer => <li key={ developer.id }>{ developer.name }</li>)
