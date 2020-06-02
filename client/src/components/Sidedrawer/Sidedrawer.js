@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Sidedrawer.css';
 
 const Sidedrawer = props => {
@@ -15,10 +16,22 @@ const Sidedrawer = props => {
             </div>
             <ul className="list">
                 <li className="items">
-                    <a href="/">
+                    <Link to="/" className="items-link">
                         <i className="fa fa-home"></i>
                         <span>Home</span>
-                    </a> 
+                    </Link> 
+                </li>
+                <li className="items">
+                    <Link to="/about" className="items-link">
+                        <i className="fa fa-home"></i>
+                        <span>About</span>
+                    </Link> 
+                </li>
+                <li className="items">
+                    <Link to="/developers" className="items-link">
+                        <i className="fa fa-home"></i>
+                        <span>Developers</span>
+                    </Link> 
                 </li>
             </ul>
         </div>
