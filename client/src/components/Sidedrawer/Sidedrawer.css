@@ -6,11 +6,15 @@
     max-width: 300px;
     height: 100vh;
     /* TEST */
-    background-color: black;
-    /* color: #000; */
+    background-color: #000;
     box-shadow: 2px 0 8px rgba(0, 0, 0, .75);
     z-index: 200;
-    transition: 300ms ease-out;
+    transform: translateX(-300px);
+    transition: transform 400ms ease-out;
+}
+
+.open {
+    transform: translateX(0);
 }
 
 .side-logo {
@@ -35,14 +39,19 @@
     padding: 15px 10px;
 }
 
+.items:hover {
+    background-color: #262626;
+}
+
 .items a {
-    color: white;
+    /* color: white; */
+    color: rgb(225, 225, 225);
     text-decoration: none;
 }
 
 .items a i {
     font-size: 28px;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .items a span {

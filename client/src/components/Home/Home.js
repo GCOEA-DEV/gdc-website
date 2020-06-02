@@ -1,11 +1,32 @@
 import React, { Component } from 'react';
 import './Home.css';
+import Particles from 'react-particles-js';
 
 class Home extends Component {
     render() {
         return (
             <div className="home">
-                <h1>WELCOME!</h1>
+                <Particles
+                    canvasClassName="particles"
+                    params={{
+                        "particles": {
+                            "number": {
+                                "value": 50
+                            },
+                            "size": {
+                                "value": 3
+                            }
+                        },
+                        "interactivity": {
+                            "events": {
+                                "onhover": {
+                                    "enable": true,
+                                    "mode": "repulse"
+                                }
+                            }
+                        }
+                    }} 
+                />
             </div>
         );
     }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Sidedrawer from './components/Sidedrawer/Sidedrawer';
 import Backdrop from "./components/Backdrop";
+import Home from './components/Home/Home';
 import './App.css';
 
 class App extends Component {
@@ -21,21 +22,18 @@ class App extends Component {
 
     render() {
 
-        let sidedrawer, backdrop; 
+        let backdrop; 
 
         if (this.state.isDrawerOpen) {
-            sidedrawer = <Sidedrawer />
-            backdrop = <Backdrop click={this.backdropClickHandler} />
+            backdrop = <Backdrop click={this.backdropClickHandler} />;
         }
 
         return (
             <div className="App">
                 <Navbar drawerToggleHandler={this.drawerToggleHandler} />
-                { sidedrawer }
+                <Sidedrawer show={this.state.isDrawerOpen} />
                 { backdrop }
-                <div className="main">
-                    Welcome to Gcoea Developers Club 🚀
-                </div>
+                <Home />
             </div>
         );
     }

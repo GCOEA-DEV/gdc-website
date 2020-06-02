@@ -15,7 +15,8 @@
   "dependencies": {
     "concurrently": "^5.2.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react-particles-js": "^3.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
