@@ -1,32 +1,29 @@
 import React, { Component } from 'react';
 import './Home.css';
-import Particles from 'react-particles-js';
 
 class Home extends Component {
     render() {
         return (
             <div className="home">
-                <Particles
-                    canvasClassName="particles"
-                    params={{
-                        "particles": {
-                            "number": {
-                                "value": 50
-                            },
-                            "size": {
-                                "value": 3
-                            }
-                        },
-                        "interactivity": {
-                            "events": {
-                                "onhover": {
-                                    "enable": true,
-                                    "mode": "repulse"
-                                }
-                            }
-                        }
-                    }} 
-                />
+                <div className="main">
+                    <div className="gdc-header">
+                        GDC
+                    </div>
+                    <div>
+                        <small>GCOEA DEVELOPERS CLUB</small>
+                    </div>
+                    <div className="header-links">
+                        <a href="https://github.com/GCOEA-DEV" target="_blank">
+                            <i className="fa fa-github"></i>
+                        </a>
+                        <a>
+                            <i className="fa fa-linkedin"></i>
+                        </a>
+                        <a>
+                            <i className="fa fa-slack"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         );
     }

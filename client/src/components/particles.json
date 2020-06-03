@@ -1,0 +1,25 @@
+{
+    "particles": {
+        "number": {
+            "value": 100
+        },
+        "size": {
+            "value": 3
+        },
+        "color": {
+            "value": ["#262626"]
+        },
+        "line_linked": {
+            "color": "#262626",
+            "opacity": 0.5
+        }
+    },
+    "interactivity": {
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "repulse"
+            }
+        }
+    }
+}

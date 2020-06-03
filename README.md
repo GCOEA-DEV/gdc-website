@@ -22,7 +22,7 @@ npm run dev
 ### Todos 📋
 - [X] Split the project files into client and server
 - [X] Setup React Router
-- [ ] Add Homepage
+- [X] Add Homepage
 - [ ] Add About page
 - [ ] Add Projects / Ideas
 - [ ] Add Developers Page 
