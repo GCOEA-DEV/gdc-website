@@ -23,13 +23,13 @@ const Sidedrawer = props => {
                 </li>
                 <li className="items">
                     <Link to="/about" className="items-link">
-                        <i className="fa fa-home"></i>
+                        <i className="fa fa-info-circle"></i>
                         <span>About</span>
                     </Link> 
                 </li>
                 <li className="items">
                     <Link to="/developers" className="items-link">
-                        <i className="fa fa-home"></i>
+                        <i className="fa fa-rocket"></i>
                         <span>Developers</span>
                     </Link> 
                 </li>

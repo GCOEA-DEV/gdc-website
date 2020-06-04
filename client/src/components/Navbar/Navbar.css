@@ -12,7 +12,8 @@
 
 .logo img {
     width: 50px;
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
+    margin: 8px 16px;
     animation: rotate 3s;
 }
 
@@ -29,11 +30,15 @@
 }
 
 .menu-icon:hover {
-    background-color: white;
+    background-color: #262626;
+}
+
+.menu-icon:hover i {
+    color: white;
 }
 
 .menu-icon i {
-    color: pink;
+    color: #262626;
     font-size: 28px;
     cursor: pointer;
 }
