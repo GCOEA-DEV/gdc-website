@@ -13,8 +13,8 @@ class Card extends Component {
     render() {
         return(
             <div className="container1">
-                <div className="row boxed">
-                    <div>
+                <div className="row boxed con1">
+                    <div className="">
                         <img src={this.state.devdata.image}></img>
                     </div>
 
