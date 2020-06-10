@@ -13,7 +13,7 @@ class Home extends Component {
                         <small>GCOEA DEVELOPERS CLUB</small>
                     </div>
                     <div className="header-links">
-                        <a href="https://github.com/GCOEA-DEV" target="_blank">
+                        <a href="https://github.com/GCOEA-DEV">
                             <i className="fa fa-github"></i>
                         </a>
                         <a>
