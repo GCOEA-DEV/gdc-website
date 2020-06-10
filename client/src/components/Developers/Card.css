@@ -1,0 +1,39 @@
+.card {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
+}
+
+.photo img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.info {
+    padding: 10px 20px;
+}
+
+.info h2 {
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.info p {
+    /* color: rgb(150, 150, 150); */
+}
+
+.sociallinks i {
+    font-size: 24px;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        display: block;
+    }
+    .photo, .info {
+        text-align: center;
+    }
+}

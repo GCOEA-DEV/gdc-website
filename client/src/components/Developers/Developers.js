@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
+import Card from './Card';
 import './Developers.css';
 
 class Developers extends Component {
-    constructor() {
-        super();
-        this.state = {
-            developers: []
-        };
-    }
+    state = {
+        developers: []
+    };
 
     componentDidMount() {
         fetch('/api/developers')
@@ -19,11 +17,16 @@ class Developers extends Component {
     render() {
         return (
             <div className="developers">
-                <ul>
+                <div className="cards-container">
+                    <Card name="Pranjal Alone" />
+                    <Card name="Nilay Ingle" />
+                    <Card name="Vaibhav Butale" />
+                </div>
+                {/* <ul>
                     {
                         this.state.developers.map(developer => <li key={ developer.id }>{ developer.name }</li>)
                     }
-                </ul>
+                </ul> */}
             </div>
         );
     }    
