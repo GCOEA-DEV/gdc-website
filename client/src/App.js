@@ -40,7 +40,7 @@ class App extends Component {
                     <Navbar drawerToggleHandler={this.drawerToggleHandler} />
                     <Sidedrawer show={this.state.isDrawerOpen} />
                     { backdrop }
-
+                    
                     <Switch>
                         <Route path="/" component={ Home } exact />
                         <Route path="/about" component={ About } />
