@@ -24,6 +24,9 @@ class Home extends Component {
             </a>
           </div>
         </div>
+      </div>
+    );
+  }
 }
 
 export default Home;
