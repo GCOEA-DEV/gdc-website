@@ -1,12 +1,21 @@
 .developers {
-    width: 60%;
-    /* margin-top: 60px; */
-    margin: 60px auto;
-    /* display: flex; */
+  width: 50%;
+  padding-top: 60px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* .cards-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-} */
+.developers-header {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .developers {
+    width: 95%;
+  }
+}
