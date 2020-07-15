@@ -1,0 +1,22 @@
+.form-div {
+    width: 500px;
+    margin: 0 auto;
+}
+
+form .input-div {
+    padding-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    font-family: var(--global-font-family);
+    padding: 5px;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .form-div {
+        width: 100%;
+    }
+}

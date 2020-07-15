@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
+import Particles from 'react-particles-js';
+import Params from '../particles.json';
 import './Home.css';
 
 class Home extends Component {
   render() {
     return (
       <div className="home">
+        <Particles params={Params} />
         <div className="main">
           <div className="gdc-header">
             GDC
           </div>
           <div>
-            <small>GCOEA DEVELOPERS CLUB</small>
+            <span role="img" aria-label="rocket">🚀</span> WELCOME TO GCOEA DEVELOPERS CLUB <span role="img" aria-label="rocket">🚀</span>
           </div>
           <div className="header-links">
             <a href="https://github.com/GCOEA-DEV">

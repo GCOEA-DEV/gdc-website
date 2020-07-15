@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Card from './Card';
 import './Developers.css';
 
 class Developers extends Component {
@@ -17,10 +16,34 @@ class Developers extends Component {
   render() {
     return (
       <div className="developers">
-      <div className="developers-header">DEVELOPERS</div>
-      {
-        this.state.developers.map((developer, i) => <Card key={i} developer={developer} />)
-      }
+        <div className="developers-header">
+          <h2>DEVELOPERS 🤓</h2>
+        </div>
+        <div className="developers-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Skills</th>
+                <th>Socials</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pranjal Alone</td>
+                <td>Javascript, Reactjs, Python, Django, Flask, C++</td>
+                <td>
+                  <a href='https://github.com/ppalone'>
+                    <i className='fa fa-github'></i>
+                  </a>
+                  <a href='https://github.com/ppalone'>
+                    <i className='fa fa-linkedin'></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }

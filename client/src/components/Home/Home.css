@@ -2,11 +2,8 @@
     display: flex;
     width: 100%;
     height: 100vh;
-    /* justify-content: center; */
-    align-content: center;
     align-items: center;
     text-align: center;
-    /* background-color: black; */
 }
 
 .main {
@@ -14,7 +11,7 @@
 }
 
 .gdc-header {
-    font-size: 120px;
+    font-size: 180px;
     letter-spacing: 1px;
 }
 
@@ -26,4 +23,10 @@
 .header-links i {
     font-size: 32px;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .gdc-header {
+        font-size: 120px;
+    }
 }

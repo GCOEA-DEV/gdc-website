@@ -1,21 +1,50 @@
 .developers {
-  width: 50%;
-  padding-top: 60px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    /* TEST */
+    /* background-color: magenta; */
+    /* height: 100vh; */
+    margin-top: 60px;
 }
 
 .developers-header {
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-align: center;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 5px 0; 
 }
 
+.developers-table {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.54);
+}
+
+td a {
+    font-size: 20px;
+    color: var(--global-text-primary);
+}
+
+td i {
+    cursor: pointer;
+    padding: 0 5px;
+}
+/* tr:nth-child(even) {
+    background-color: #f2f2f2
+} */
+
 @media (max-width: 768px) {
-  .developers {
-    width: 95%;
-  }
+    .developers {
+        width: 90%;
+    }
 }
