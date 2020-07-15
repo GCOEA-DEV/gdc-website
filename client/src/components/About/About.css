@@ -1,7 +1,35 @@
 .about {
-    display: flex;
-    width: 100hw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    margin: 70px;
+}
+
+.heading {
+    background-color: #232B2B;
+    color: aliceblue;
+}
+
+.body {
+    margin-top: -21px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    padding-top: 3px;
+}
+
+.hd1 {
+    color: blue;
+}
+
+.hd2 {
+    color: red;
+}
+
+.hd3 {
+    color: orange;
+}
+
+.hd4 {
+    color: blue;
+}
+
+.hd5 {
+    color: green;
 }
