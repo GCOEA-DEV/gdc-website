@@ -6,15 +6,19 @@
     width: 100%;
     height: 60px;
     align-items: center;
-    /* TEST */
-    /* background-color: #262626; */
+    background-color: white;
+    padding: 5px 0 5px 10px;
 }
 
-.logo img {
-    width: 50px;
-    /* padding: 8px 16px; */
-    margin: 8px 16px;
-    animation: rotate 3s;
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+    color: #262626;
+    padding: 5px;
+}
+
+.logo a {
+    color: var(--global-text-primary);
 }
 
 .menu-icon {
@@ -23,10 +27,9 @@
     width: 50px;
     margin-left: auto;
     border-radius: 50%;
-    /* background-color: #262626; */
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 .menu-icon:hover {
@@ -38,7 +41,7 @@
 }
 
 .menu-icon i {
-    color: #262626;
+    color: var(--global-text-primary);
     font-size: 28px;
     cursor: pointer;
 }

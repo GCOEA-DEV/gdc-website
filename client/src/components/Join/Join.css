@@ -1,0 +1,24 @@
+.join-page {
+    width: 60%;
+    margin: 60px auto 0 auto;
+}
+
+.join-header {
+    text-align: center;
+}
+
+.join-page > p {
+    text-align: center;
+    color: var(--global-text-secondary);
+}
+
+.join-header h2 {
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .join-page {
+        width: 90%;
+    }
+}
