@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Particles from 'react-particles-js';
 import Navbar from './components/Navbar/Navbar';
 import Sidedrawer from './components/Sidedrawer/Sidedrawer';
-import Backdrop from "./components/Backdrop";
+import Backdrop from './components/Backdrop';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Developers from './components/Developers/Developers';
@@ -12,14 +11,14 @@ import './App.css';
 
 class App extends Component {
   state = {
-    isDrawerOpen: false
+    isDrawerOpen: false,
   };
 
   drawerToggleHandler = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { isDrawerOpen: !prevState.isDrawerOpen };
     });
-  }
+  };
 
   backdropClickHandler = () => {
     this.setState({ isDrawerOpen: false });
@@ -35,7 +34,7 @@ class App extends Component {
         <div className="App">
           <Navbar drawerToggleHandler={this.drawerToggleHandler} />
           <Sidedrawer show={this.state.isDrawerOpen} />
-          { backdrop }
+          {backdrop}
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/about" component={About} />
