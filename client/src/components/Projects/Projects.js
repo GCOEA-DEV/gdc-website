@@ -5,6 +5,7 @@ import Loader from '../Loader';
 import './Projects.css';
 
 class Projects extends Component {
+
   state = {
     projects: [],
     isLoading: true,
@@ -23,7 +24,7 @@ class Projects extends Component {
     } catch (err) {
       console.log(err);
     }
-  };
+  }
 
   render() {
     return this.state.isLoading ? (
