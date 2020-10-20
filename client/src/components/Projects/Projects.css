@@ -1,0 +1,33 @@
+.projects {
+  width: 80%;
+  /* padding-top: var(--nav-height); */
+  margin: var(--nav-height) auto 0 auto;
+  text-align: center;
+}
+
+.projects h1 {
+  margin: 10px 0;
+}
+
+.projects table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.projects table th {
+  padding: 5px;
+}
+
+.projects table td {
+  padding: 5px;
+}
+
+table a {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    width: 95%;
+  }
+}

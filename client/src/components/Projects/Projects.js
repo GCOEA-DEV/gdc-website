@@ -1,63 +1,72 @@
 import React, { Component } from 'react';
 
+import Loader from '../Loader';
+
+import './Projects.css';
+
 class Projects extends Component {
 
-    state = {
-        projects: null,
-        loaderMessage: "Loading..."
-    }
+  state = {
+    projects: [],
+    isLoading: true,
+  };
 
-    componentDidMount = async () => {
-        /**
-         * Retrieve the projects from Github
-         */
-        const response = await fetch('https://api.github.com/users/GCOEA-DEV/repos');
+  componentDidMount = async () => {
+    try {
+      const response = await fetch(
+        'https://api.github.com/users/GCOEA-DEV/repos'
+      );
+      if (response.status === 200) {
         const projects = await response.json();
-        if(response.status === 200) {
-            this.setState({ projects });
-        } else {
-            this.setState({ loaderMessage: "Unable to retrive the projects. Try again" });
-        }
-
+        // console.log(projects);
+        this.setState({ projects: projects, isLoading: false });
+      }
+    } catch (err) {
+      console.log(err);
     }
+  }
 
-    render() {
-
-        const { projects, loaderMessage } = this.state;
-
-        return (
-            <>
-                <h1>Projects</h1>
-                <div className="developers">
-                    <div className="developers-header">
-                    <h2>PROJECTS 📦</h2>
-                    </div>
-                    <div className="developers-table">
-                        { projects === null ? <p>{ loaderMessage }</p> :
-                        <table>
-                            <thead>
-                            <tr>
-                                <th>Project Name</th>
-                                <th>Description</th>
-                                <th>Language</th>
-                            </tr>
-                            </thead>
-                        <tbody>
-                            {projects.map(project => (
-                                <tr>
-                                    <td><a target='_blank' href={project.html_url}>{project.name}</a></td>
-                                    <td>{project.description}</td>
-                                    <td>{project.language}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                        </table>   
-                    }
-                    </div>
-                </div>                
-            </>
-        );
-    }
+  render() {
+    return this.state.isLoading ? (
+      <Loader />
+    ) : (
+      <div className="projects">
+        <h1>
+          Projects{' '}
+          <span role="img" aria-label="rocket">
+            🚀
+          </span>
+        </h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Description</th>
+              <th>
+                Stars{' '}
+                <span role="img" aria-label="stars">
+                  ⭐
+                </span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.projects.map((project, idx) => {
+              return (
+                <tr key={idx}>
+                  <td>
+                    <a href={project.html_url}>{project.full_name}</a>
+                  </td>
+                  <td>{project.description}</td>
+                  <td>{project.stargazers_count}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
 }
 
 export default Projects;
