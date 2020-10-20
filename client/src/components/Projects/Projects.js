@@ -5,7 +5,6 @@ import Loader from '../Loader';
 import './Projects.css';
 
 class Projects extends Component {
-
   state = {
     projects: [],
     isLoading: true,
@@ -24,7 +23,7 @@ class Projects extends Component {
     } catch (err) {
       console.log(err);
     }
-  }
+  };
 
   render() {
     return this.state.isLoading ? (
@@ -37,33 +36,35 @@ class Projects extends Component {
             🚀
           </span>
         </h1>
-        <table>
-          <thead>
-            <tr>
-              <th>Project</th>
-              <th>Description</th>
-              <th>
-                Stars{' '}
-                <span role="img" aria-label="stars">
-                  ⭐
-                </span>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {this.state.projects.map((project, idx) => {
-              return (
-                <tr key={idx}>
-                  <td>
-                    <a href={project.html_url}>{project.full_name}</a>
-                  </td>
-                  <td>{project.description}</td>
-                  <td>{project.stargazers_count}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+        <div className="table-div">
+          <table>
+            <thead>
+              <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>
+                  Stars{' '}
+                  <span role="img" aria-label="stars">
+                    ⭐
+                  </span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {this.state.projects.map((project, idx) => {
+                return (
+                  <tr key={idx}>
+                    <td>
+                      <a href={project.html_url}>{project.full_name}</a>
+                    </td>
+                    <td>{project.description}</td>
+                    <td>{project.stargazers_count}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }
