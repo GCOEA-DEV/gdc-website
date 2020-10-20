@@ -25,4 +25,5 @@ html,
 body {
   font-family: var(--global-font-family);
   color: var(--global-text-primary);
+  background-color: var(--global-background);
 }

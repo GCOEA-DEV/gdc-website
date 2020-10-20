@@ -1,6 +1,5 @@
 .projects {
-  width: 80%;
-  /* padding-top: var(--nav-height); */
+  width: 60%;
   margin: var(--nav-height) auto 0 auto;
   text-align: center;
 }
@@ -9,17 +8,23 @@
   margin: 10px 0;
 }
 
-.projects table {
+.projects .table-div {
   width: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
+/* .table-div::-webkit-scrollbar {
+  scrollbar-width: none;
+  background-color: transparent;
+} */
+
 .projects table th {
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .projects table td {
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 table a {
