@@ -1,47 +1,47 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: 100%;
-    height: 60px;
-    align-items: center;
-    background-color: white;
-    padding: 5px 0 5px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: var(--nav-height);
+  align-items: center;
+  background-color: white;
+  padding: 5px 0 5px 10px;
 }
 
 .logo {
-    font-size: 32px;
-    font-weight: 600;
-    color: #262626;
-    padding: 5px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #262626;
+  padding: 5px;
 }
 
 .logo a {
-    color: var(--global-text-primary);
+  color: var(--global-text-primary);
 }
 
 .menu-icon {
-    display: flex;
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    margin-right: 5px;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
 }
 
 .menu-icon:hover {
-    background-color: #262626;
+  background-color: #262626;
 }
 
 .menu-icon:hover i {
-    color: white;
+  color: white;
 }
 
 .menu-icon i {
-    color: var(--global-text-primary);
-    font-size: 28px;
-    cursor: pointer;
+  color: var(--global-text-primary);
+  font-size: 28px;
+  cursor: pointer;
 }
