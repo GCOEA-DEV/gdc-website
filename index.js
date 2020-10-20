@@ -16,4 +16,9 @@ app.use(cors());
 
 app.use('/api', apiRoutes);
 
+// 404s
+app.get('*', (req, res) => {
+  res.send('Error 404: Page not found!');
+});
+
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
