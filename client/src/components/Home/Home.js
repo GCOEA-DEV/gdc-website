@@ -20,15 +20,9 @@ class Home extends Component {
             </span>
           </div>
           <div className="header-links">
-            <a href="https://github.com/GCOEA-DEV">
-              <i className="fa fa-github"></i>
-            </a>
-            <a href="https://in.linkedin.com/">
-              <i className="fa fa-linkedin"></i>
-            </a>
-            <a href="https://slack.com">
-              <i className="fa fa-slack"></i>
-            </a>
+            <a href="https://github.com/GCOEA-DEV">GitHub</a>
+            <a href="https://in.linkedin.com/">LinkedIn</a>
+            <a href="https://slack.com">Slack</a>
           </div>
         </div>
       </div>

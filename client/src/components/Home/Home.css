@@ -24,9 +24,11 @@
   text-decoration: none;
 }
 
-.header-links i {
-  font-size: 32px;
-  padding: 10px;
+.header-links {
+  /* font-size: 32px;
+  padding: 10px; */
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 768px) {
