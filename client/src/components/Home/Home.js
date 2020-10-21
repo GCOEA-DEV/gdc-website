@@ -9,11 +9,15 @@ class Home extends Component {
       <div className="home">
         <Particles params={Params} />
         <div className="main">
-          <div className="gdc-header">
-            GDC
-          </div>
+          <div className="gdc-header">GDC</div>
           <div>
-            <span role="img" aria-label="rocket">🚀</span> WELCOME TO GCOEA DEVELOPERS CLUB <span role="img" aria-label="rocket">🚀</span>
+            <span role="img" aria-label="rocket">
+              🚀
+            </span>{' '}
+            WELCOME TO GCOEA DEVELOPERS CLUB{' '}
+            <span role="img" aria-label="rocket">
+              🚀
+            </span>
           </div>
           <div className="header-links">
             <a href="https://github.com/GCOEA-DEV">

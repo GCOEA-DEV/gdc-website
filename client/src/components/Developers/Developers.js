@@ -1,20 +1,31 @@
 import React, { Component } from 'react';
+
+import Loader from '../Loader';
+
 import './Developers.css';
 
 class Developers extends Component {
   state = {
     developers: [],
+    isLoading: true,
   };
 
-  componentDidMount() {
-    fetch('/api/developers')
-      .then((res) => res.json())
-      .then((developers) => this.setState({ developers }))
-      .catch((err) => console.log(err));
-  }
+  componentDidMount = async () => {
+    try {
+      let res = await fetch('/api/developers');
+      if (res.statusCode === 200) {
+        let developers = await res.json();
+        this.setState({ developers: developers, isLoading: false });
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   render() {
-    return (
+    return this.state.isLoading ? (
+      <Loader />
+    ) : (
       <div className="developers">
         <div className="developers-header">
           <h2>

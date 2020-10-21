@@ -1,50 +1,48 @@
 .developers {
-    width: 60%;
-    margin: 0 auto;
-    /* TEST */
-    /* background-color: magenta; */
-    /* height: 100vh; */
-    margin-top: 60px;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 60px;
 }
 
 .developers-header {
-    text-align: center;
-    letter-spacing: 1px;
-    padding: 5px 0; 
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 5px 0;
 }
 
 .developers-table {
-    overflow-x: auto;
+  overflow-x: auto;
 }
 
 table {
-    width: 100%;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.54);
-    border-collapse: collapse;
-    border-spacing: 0;
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-td, th {
-    padding: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.54);
+td,
+th {
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.54);
 }
 
 td a {
-    font-size: 20px;
-    color: var(--global-text-primary);
+  font-size: 20px;
+  color: var(--global-text-primary);
 }
 
 td i {
-    cursor: pointer;
-    padding: 0 5px;
+  cursor: pointer;
+  padding: 0 5px;
 }
 /* tr:nth-child(even) {
     background-color: #f2f2f2
 } */
 
 @media (max-width: 768px) {
-    .developers {
-        width: 90%;
-    }
+  .developers {
+    width: 90%;
+  }
 }
