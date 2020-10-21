@@ -37,12 +37,11 @@
   background-color: #262626;
 }
 
-.menu-icon:hover i {
-  color: white;
+.menu-icon:hover svg {
+  fill: white;
 }
 
-.menu-icon i {
-  color: var(--global-text-primary);
-  font-size: 28px;
+.menu-icon svg {
+  fill: black;
   cursor: pointer;
 }
