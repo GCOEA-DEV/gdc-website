@@ -28,11 +28,10 @@ class App extends Component {
   };
 
   render() {
-    // let backdrop;
     let { isDrawerOpen } = this.state;
     return (
       <BrowserRouter>
-        <div className="App">
+        <div className="app">
           <Navbar drawerToggleHandler={this.drawerToggleHandler} />
           <Sidedrawer
             show={isDrawerOpen}

@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+import ThemeToggle from './ThemeToggle';
+
 import './Sidedrawer.css';
 
 const Sidedrawer = (props) => {
@@ -75,6 +78,10 @@ const Sidedrawer = (props) => {
               Join
             </span>
           </Link>
+        </li>
+        <li className="spacer" />
+        <li className="items" id="theme-toggle-div">
+          <ThemeToggle />
         </li>
       </ul>
     </div>
