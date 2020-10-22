@@ -13,8 +13,8 @@ class Developers extends Component {
   componentDidMount = async () => {
     try {
       let res = await fetch('/api/developers');
-      if (res.statusCode === 200) {
-        let developers = await res.json();
+      if (res.status === 200) {
+        const developers = await res.json();
         this.setState({ developers: developers, isLoading: false });
       }
     } catch (err) {
@@ -45,18 +45,25 @@ class Developers extends Component {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Pranjal Alone</td>
-                <td>Javascript, Reactjs, Python, Django, Flask, C++</td>
-                <td>
-                  <a href="https://github.com/ppalone">
-                    <i className="fa fa-github"></i>
-                  </a>
-                  <a href="https://github.com/ppalone">
-                    <i className="fa fa-linkedin"></i>
-                  </a>
-                </td>
-              </tr>
+              {this.state.developers.map((developer, idx) => {
+                return (
+                  <tr key={idx}>
+                    <td>{developer.name}</td>
+                    <td>{developer.skills.join(', ')}</td>
+                    <td>
+                      {developer.socials.linkedin && (
+                        <a href={developer.socials.linkedin}>LinkedIn</a>
+                      )}{' '}
+                      {developer.socials.github && (
+                        <a href={developer.socials.github}>Github</a>
+                      )}{' '}
+                      {developer.socials.website && (
+                        <a href={developer.socials.website}>Website</a>
+                      )}
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
