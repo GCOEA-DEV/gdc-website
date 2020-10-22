@@ -9,5 +9,12 @@ module.exports = {
         website: 'https://ppalone.github.io/',
       },
     },
+    {
+      name: 'Foo bar',
+      skills: ['Flutter', 'Angularjs', 'Golang'],
+      socials: {
+        github: 'https://github.com/google',
+      },
+    },
   ],
 };

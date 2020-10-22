@@ -1,6 +1,6 @@
 // @route /api/developers
 // Get all Developers
-const developers = require('../../database/database');
+const developers = require('../../database/database').developers;
 
 // TODO
 // Mailing service
@@ -10,7 +10,7 @@ const developers = require('../../database/database');
 const getAllDevs = (req, res, next) => {
   // Get all developers
   // console.log(developers);
-  res.json(developers);
+  res.status(200).json(developers);
 };
 
 module.exports = {
