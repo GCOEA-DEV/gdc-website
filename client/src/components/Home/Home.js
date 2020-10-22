@@ -3,6 +3,10 @@ import Particles from 'react-particles-js';
 import Params from '../particles.json';
 import './Home.css';
 
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import WorkIcon from '@material-ui/icons/Work';
+
 class Home extends Component {
   render() {
     return (
@@ -20,9 +24,15 @@ class Home extends Component {
             </span>
           </div>
           <div className="header-links">
-            <a href="https://github.com/GCOEA-DEV">GitHub</a>
-            <a href="https://in.linkedin.com/">LinkedIn</a>
-            <a href="https://slack.com">Slack</a>
+            <a href="https://github.com/GCOEA-DEV">
+              <GitHubIcon />
+            </a>
+            <a href="https://in.linkedin.com/">
+              <LinkedInIcon style={{ fontSize: '28px' }} />
+            </a>
+            <a href="https://slack.com">
+              <WorkIcon />
+            </a>
           </div>
         </div>
       </div>

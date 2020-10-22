@@ -80,7 +80,7 @@ const Sidedrawer = (props) => {
           </Link>
         </li>
         <li className="spacer" />
-        <li className="items" id="theme-toggle-div">
+        <li id="theme-toggle-div">
           <ThemeToggle />
         </li>
       </ul>
