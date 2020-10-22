@@ -29,7 +29,7 @@ th {
 }
 
 td a {
-  font-size: 20px;
+  font-size: 16px;
   /* padding: 0 5px; */
   color: var(--global-text-primary);
 }
