@@ -19,16 +19,17 @@
   letter-spacing: 1px;
 }
 
+.header-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .header-links a {
   color: black;
   text-decoration: none;
-}
-
-.header-links {
-  /* font-size: 32px;
-  padding: 10px; */
-  display: flex;
-  justify-content: space-evenly;
+  /* margin: 0px 10px; */
 }
 
 @media (max-width: 768px) {

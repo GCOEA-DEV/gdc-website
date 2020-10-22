@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 
-import { Menu } from '../../icons/Icons';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const Navbar = (props) => (
   <nav className="navbar">
@@ -10,7 +10,7 @@ const Navbar = (props) => (
     </div>
     <div className="spacer" />
     <div className="menu-icon" onClick={props.drawerToggleHandler}>
-      <Menu />
+      <MenuIcon style={{ fontSize: '28px' }} />
     </div>
   </nav>
 );
