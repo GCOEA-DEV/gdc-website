@@ -42,12 +42,8 @@ class Projects extends Component {
               <tr>
                 <th>Project</th>
                 <th>Description</th>
-                <th>
-                  Stars{' '}
-                  <span role="img" aria-label="stars">
-                    ⭐
-                  </span>
-                </th>
+                <th>Stars</th>
+                <th>Forks</th>
               </tr>
             </thead>
             <tbody>
@@ -59,6 +55,7 @@ class Projects extends Component {
                     </td>
                     <td>{project.description}</td>
                     <td>{project.stargazers_count}</td>
+                    <td>{project.forks}</td>
                   </tr>
                 );
               })}
