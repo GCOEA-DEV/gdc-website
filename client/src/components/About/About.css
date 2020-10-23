@@ -1,7 +1,7 @@
 .about {
-    display: flex;
-    width: 100hw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }

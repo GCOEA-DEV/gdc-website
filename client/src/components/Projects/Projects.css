@@ -24,6 +24,7 @@
   border: 1px solid rgba(0, 0, 0, 0.54);
   border-collapse: collapse;
   border-spacing: 0;
+  margin: 10px auto 0px auto;
 }
 
 .projects table th {

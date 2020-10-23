@@ -10,12 +10,13 @@
 
 .join-page > p {
   text-align: center;
+  font-style: italic;
   color: var(--global-text-secondary);
 }
 
 .join-header h2 {
   text-transform: uppercase;
-  padding-top: 10px;
+  margin: 10px;
 }
 
 @media (max-width: 768px) {

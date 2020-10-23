@@ -7,14 +7,15 @@
 .developers-header {
   text-align: center;
   letter-spacing: 1px;
-  padding: 5px 0;
+  /* padding: 5px 0; */
+  margin: 10px 0;
 }
 
 .developers-table {
   overflow-x: auto;
 }
 
-table {
+.developers-table table {
   width: 100%;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.54);
@@ -22,21 +23,16 @@ table {
   border-spacing: 0;
 }
 
-td,
+.developers-table td,
 th {
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.54);
 }
 
-td a {
+.developers-table td a {
   font-size: 16px;
-  /* padding: 0 5px; */
   color: var(--global-text-primary);
 }
-
-/* tr:nth-child(even) {
-    background-color: #f2f2f2
-} */
 
 @media (max-width: 768px) {
   .developers {
