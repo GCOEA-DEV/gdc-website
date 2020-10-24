@@ -41,15 +41,19 @@
 .items {
   display: flex;
   align-items: center;
-  padding: 15px 10px;
+  cursor: pointer;
 }
 
 .items:hover {
   background-color: var(--global-background-hover);
 }
 
+.items:hover {
+  transform: scale(1.05);
+}
+
 .items-link {
-  padding-left: 10px;
+  padding: 10px 0px 10px 15px;
   color: var(--global-text-primary);
   font-size: 1.5rem;
   width: 100%;

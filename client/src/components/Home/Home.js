@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import Particles from 'react-particles-js';
-import Params from '../particles.json';
 import './Home.css';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import WorkIcon from '@material-ui/icons/Work';
+import MailIcon from '@material-ui/icons/Mail';
 
 class Home extends Component {
   render() {
     return (
       <div className="home">
-        <Particles params={Params} />
         <div className="main">
           <div className="gdc-header">GDC</div>
           <div>
@@ -32,6 +30,9 @@ class Home extends Component {
             </a>
             <a href="https://slack.com">
               <WorkIcon />
+            </a>
+            <a href="mailto:gcoeadevelopers@gmail.com">
+              <MailIcon />
             </a>
           </div>
         </div>
