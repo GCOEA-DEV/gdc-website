@@ -2,6 +2,8 @@ footer .footer-links {
   display: flex;
   justify-content: space-evenly;
   padding: 5px 0;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 footer .footer-links div a {
@@ -11,7 +13,7 @@ footer .footer-links div a {
 }
 
 .footer-links div a:hover {
-  transform: scale(1.25);
+  transform: scale(1.25) translateY(-2px);
 }
 
 .footer-copyright {
