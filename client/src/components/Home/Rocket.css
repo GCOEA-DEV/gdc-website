@@ -1,0 +1,27 @@
+.rocket-div {
+  margin: 0 auto;
+}
+
+.rocket-div svg {
+  width: 400px;
+  height: 400px;
+  animation: move 3s infinite;
+}
+
+/* Rocket Animation */
+@keyframes move {
+  0%,
+  100% {
+    transform: translateX(-15px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .rocket-div svg {
+    width: 200px;
+    height: 200px;
+  }
+}

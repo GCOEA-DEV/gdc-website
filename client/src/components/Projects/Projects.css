@@ -21,6 +21,7 @@
 }
 
 .projects table {
+  width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.54);
   border-collapse: collapse;
   border-spacing: 0;
@@ -28,12 +29,12 @@
 }
 
 .projects table th {
-  padding: 5px 10px;
+  padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.54);
 }
 
 .projects table td {
-  padding: 5px 10px;
+  padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.54);
 }
 
