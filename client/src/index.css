@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
-  --global-font-family: sans-serif;
+  --global-font-family: 'Roboto', sans-serif;
   --global-text-primary: rgba(0, 0, 0, 0.87);
   --global-text-secondary: rgba(0, 0, 0, 0.54);
   --global-background: rgb(255, 255, 255);
@@ -10,8 +12,6 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 body {
