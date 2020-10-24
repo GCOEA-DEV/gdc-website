@@ -1,0 +1,20 @@
+footer .footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px 0;
+}
+
+footer .footer-links div a {
+  display: inline-block;
+  color: var(--global-text-primary);
+  transition: transform 200ms ease-in;
+}
+
+.footer-links div a:hover {
+  transform: scale(1.25);
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 10px 0;
+}

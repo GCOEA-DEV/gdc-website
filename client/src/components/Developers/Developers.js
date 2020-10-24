@@ -28,12 +28,12 @@ class Developers extends Component {
     ) : (
       <div className="developers">
         <div className="developers-header">
-          <h2>
+          <h1>
             DEVELOPERS{' '}
             <span role="img" aria-label="nerd">
               🤓
             </span>
-          </h2>
+          </h1>
         </div>
         <div className="developers-table">
           <table>

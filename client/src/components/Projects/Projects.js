@@ -12,9 +12,7 @@ class Projects extends Component {
 
   componentDidMount = async () => {
     try {
-      const response = await fetch(
-        'https://api.github.com/users/GCOEA-DEV/repos'
-      );
+      const response = await fetch('/api/projects');
       if (response.status === 200) {
         const projects = await response.json();
         // console.log(projects);
@@ -31,7 +29,7 @@ class Projects extends Component {
     ) : (
       <div className="projects">
         <h1>
-          Projects{' '}
+          PROJECTS{' '}
           <span role="img" aria-label="rocket">
             🚀
           </span>
