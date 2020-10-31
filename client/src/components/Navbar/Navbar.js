@@ -10,7 +10,7 @@ const Navbar = (props) => (
     </div>
     <div className="spacer" />
     <div className="menu-icon" onClick={props.drawerToggleHandler}>
-      <MenuIcon style={{ fontSize: '28px' }} />
+      <MenuIcon style={{ fontSize: '24px' }} />
     </div>
   </nav>
 );

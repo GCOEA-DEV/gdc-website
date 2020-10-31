@@ -6,7 +6,6 @@
   width: 100%;
   height: var(--nav-height);
   align-items: center;
-  background-color: white;
   padding: 5px 0 5px 10px;
   z-index: 1;
 }
@@ -33,15 +32,19 @@
   margin-right: 5px;
 }
 
+.menu-icon svg {
+  font-size: large;
+}
+
 .menu-icon:hover {
-  background-color: #262626;
+  background-color: var(--global-text-primary);
 }
 
 .menu-icon:hover svg {
-  fill: white;
+  color: var(--global-background);
 }
 
-.menu-icon svg {
+/* .menu-icon svg {
   fill: black;
   cursor: pointer;
-}
+} */
