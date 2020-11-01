@@ -28,14 +28,7 @@ body {
 }
 
 body {
-  width: 100%;
-  height: 100%;
   font-family: var(--global-font-family);
   color: var(--global-text-primary);
   background-color: var(--global-background);
-}
-
-#root {
-  width: 100%;
-  height: 100%;
 }

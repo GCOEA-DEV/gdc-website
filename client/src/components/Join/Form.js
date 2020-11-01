@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import './Form.css';
 
+import CancelIcon from '@material-ui/icons/Cancel';
+
 class Form extends Component {
 
   state = {
-    name: 'Pranjal',
-    email: 'pranjalalone@gmail.com',
+    name: '',
+    email: '',
     loading: false,
     message: ''
   }
 
   handleChange = (e) => {
-    // console.log(e.target.name);
     if (e.target.name === 'name') {
       this.setState({
         name: e.target.value
@@ -43,14 +44,19 @@ class Form extends Component {
     }, 3000);
   }
 
-  disappear = () => {
-    this.setState({ message: '' });
+  removeMessage = () => {
+    this.setState({ message: '' })
   }
 
   render() {
     return (
       <div className="form-div">
-        {this.state.message.trim() && <div className='message' onAnimationEnd={this.disappear}>{this.state.message}</div>}
+        {this.state.message.trim() && <div className='message'>
+          <div>{this.state.message}</div>
+          <div>
+            <CancelIcon onClick={this.removeMessage} />
+          </div>
+        </div>}
         <form onSubmit={this.handleFormSubmit}>
           <div className="input-div">
             <label>Name</label>
