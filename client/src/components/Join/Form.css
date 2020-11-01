@@ -10,6 +10,7 @@ form .input-div {
 form input {
   width: 100%;
   height: 40px;
+  color: var(--global-text-primary);
   font-family: var(--global-font-family);
   font-size: 16px;
   padding: 5px;
@@ -19,6 +20,48 @@ form input {
 form .input-div input {
   border: 1px solid var(--global-text-primary);
   background-color: transparent;
+}
+
+form input[type='submit'] {
+  cursor: pointer;
+}
+
+form input[type='submit']:disabled {
+  border: 1px solid var(--global-background-hover);
+  color: var(--global-background-hover);
+}
+
+.form-div .message {
+  position: absolute;
+  display: flex;
+  padding: 10px;
+  top: calc(var(--nav-height) + 2%);
+  left: calc(50% - 100px);
+  width: 200px;
+  font-size: 14px;
+  background-color: var(--global-background);
+  box-shadow: 0px 0px 2px 2px var(--global-background-hover);
+  animation: slide-down 250ms ease-in;
+}
+
+.form-div .message div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-div .message svg {
+  font-size: medium;
+  cursor: pointer;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-20%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {

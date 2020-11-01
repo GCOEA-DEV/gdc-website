@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment, useEffect } from 'react';
+
+import Helmet from 'react-helmet';
 
 import './ThemeToggle.css';
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(() => {
+    return JSON.parse(localStorage.getItem('theme')) || 'light';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('theme', JSON.stringify(theme));
+  }, [theme]);
 
   const changeTheme = () => {
-    // console.log('Hey');
     if (theme === 'light') {
       setTheme('dark');
     } else {
@@ -15,7 +22,11 @@ const ThemeToggle = () => {
   };
 
   return (
-    <div className="theme-toggle">
+    <Fragment>
+      <Helmet>
+        <body className={theme}></body>
+      </Helmet>
+      <div className="theme-toggle">
       <input type="checkbox" />
       <label className="switch" onClick={changeTheme}>
         <div>
@@ -31,6 +42,7 @@ const ThemeToggle = () => {
         <div className={`circle ${theme === 'dark' ? 'slide' : ''}`}></div>
       </label>
     </div>
+    </Fragment>
   );
 };
 

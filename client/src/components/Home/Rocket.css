@@ -5,17 +5,17 @@
 .rocket-div svg {
   width: 400px;
   height: 400px;
-  animation: move 2s infinite;
+  animation: move 3s infinite;
 }
 
 /* Rocket Animation */
 @keyframes move {
   0%,
   100% {
-    transform: translate(-10px, -10px);
+    transform: translate(-5px, -5px);
   }
   50% {
-    transform: translate(10px, 10px);
+    transform: translate(5px, 5px);
   }
 }
 

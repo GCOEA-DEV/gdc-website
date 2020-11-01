@@ -5,8 +5,8 @@
   display: flex;
   width: 100%;
   height: var(--nav-height);
+  background-color: var(--global-background);
   align-items: center;
-  background-color: white;
   padding: 5px 0 5px 10px;
   z-index: 1;
 }
@@ -31,17 +31,22 @@
   align-items: center;
   justify-content: center;
   margin-right: 5px;
-}
-
-.menu-icon:hover {
-  background-color: #262626;
-}
-
-.menu-icon:hover svg {
-  fill: white;
+  cursor: pointer;
 }
 
 .menu-icon svg {
+  font-size: large;
+}
+
+.menu-icon:hover {
+  background-color: var(--global-text-primary);
+}
+
+.menu-icon:hover svg {
+  color: var(--global-background);
+}
+
+/* .menu-icon svg {
   fill: black;
   cursor: pointer;
-}
+} */

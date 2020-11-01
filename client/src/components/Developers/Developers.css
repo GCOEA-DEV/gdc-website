@@ -6,8 +6,6 @@
 
 .developers-header {
   text-align: center;
-  /* letter-spacing: 1px; */
-  margin: 10px 0;
 }
 
 .developers-table {
@@ -25,7 +23,7 @@
 .developers-table td,
 th {
   padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.54);
+  border: 1px solid var(--global-text-primary);
 }
 
 .developers-table td a {

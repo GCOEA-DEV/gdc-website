@@ -1,13 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
 
 :root {
-  --global-font-family: 'Roboto', sans-serif;
+  --global-font-family: 'Source Serif Pro', sans-serif;
   --global-text-primary: rgba(0, 0, 0, 0.87);
-  --global-text-secondary: rgba(0, 0, 0, 0.54);
-  --global-background: rgb(255, 255, 255);
-  --global-background-hover: rgba(0, 0, 0, 0.1);
-  --special-color: rgb(255, 130, 150);
+  --global-text-secondary: rgba(0, 0, 0, 0.75);
+  --global-background: #ffffff;
+  --global-background-hover: rgba(0, 0, 0, 0.25);
+  --special-color: rgb(255, 107, 131);
   --nav-height: 60px;
+}
+
+.dark {
+  --global-background: rgb(30, 30, 30);
+  --global-text-primary: rgb(255, 255, 255, 0.95);
+  --global-text-secondary: rgb(255, 255, 255, 0.75);
+  --global-background-hover: rgba(255, 255,255, 0.25);
+  --special-color: rgb(255, 176, 189);
 }
 
 * {
@@ -19,16 +27,8 @@ body {
   padding: 0;
 }
 
-html,
 body {
-  width: 100%;
-  height: 100%;
   font-family: var(--global-font-family);
   color: var(--global-text-primary);
   background-color: var(--global-background);
-}
-
-#root {
-  width: 100%;
-  height: 100%;
 }
