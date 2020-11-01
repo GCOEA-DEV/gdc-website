@@ -1,7 +1,7 @@
 .projects {
   width: 60%;
   margin: 0 auto;
-  padding-top: var(--nav-height);
+  padding: var(--nav-height) 0 10px 0;
   text-align: center;
 }
 
@@ -22,7 +22,7 @@
 
 .projects table {
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.54);
+  border: 1px solid var(--global-text-primary);
   border-collapse: collapse;
   border-spacing: 0;
   margin: 10px auto 0px auto;
@@ -30,16 +30,17 @@
 
 .projects table th {
   padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.54);
+  border: 1px solid var(--global-text-primary);
 }
 
 .projects table td {
   padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.54);
+  border: 1px solid var(--global-text-primary);
 }
 
 table a {
   font-size: 16px;
+  color: var(--special-color);
 }
 
 @media (max-width: 768px) {

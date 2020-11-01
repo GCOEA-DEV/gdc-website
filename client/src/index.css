@@ -6,15 +6,16 @@
   --global-text-secondary: rgba(0, 0, 0, 0.75);
   --global-background: #ffffff;
   --global-background-hover: rgba(0, 0, 0, 0.25);
-  --special-color: rgb(255, 130, 150);
+  --special-color: rgb(255, 107, 131);
   --nav-height: 60px;
 }
 
 .dark {
-  --global-background: rgb(20, 20, 20);
+  --global-background: rgb(30, 30, 30);
   --global-text-primary: rgb(255, 255, 255, 0.95);
   --global-text-secondary: rgb(255, 255, 255, 0.75);
   --global-background-hover: rgba(255, 255,255, 0.25);
+  --special-color: rgb(255, 176, 189);
 }
 
 * {
@@ -26,7 +27,6 @@ body {
   padding: 0;
 }
 
-html,
 body {
   width: 100%;
   height: 100%;

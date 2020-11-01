@@ -17,6 +17,7 @@
   border-top: 6px solid var(--global-background-hover);
   border-radius: 50%;
   animation: spin 2s linear infinite;
+  background-color: transparent;
 }
 
 @keyframes spin {
