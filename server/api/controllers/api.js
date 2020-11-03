@@ -1,4 +1,5 @@
 const axios = require('axios');
+const nodemailer = require('nodemailer');
 const developers = require('../../database/database').developers;
 
 // TODO
@@ -36,10 +37,37 @@ const getAllProjects = async (req, res, next) => {
 // @route POST /api/mail
 // @desc Send user a link to workspace
 const mailUser = (req, res, next) => {
-  res.status(200).json({ message: 'Mail sent successfully!' });
+  const { name, email } = req.body;
+  if (!name || !email || !name.trim() || !email.trim()) {
+    return res.status(400).send('Bad Request');
+  }
+
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.MAIL_FROM,
+      pass: process.env.MAIL_PASSWORD,
+    },
+  });
+
+  const mailOptions = {
+    from: process.env.MAIL_FROM,
+    to: email,
+    subject: 'Invitation to join GDC',
+    html: `Hey ${name}, Thanks for joining Gcoea Developer's Club`,
+  };
+
+  transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      console.log(error);
+    } else {
+      res.status(200).json({ message: 'Response recorded!' });
+    }
+  });
 };
 
 module.exports = {
   getAllDevs,
   getAllProjects,
+  mailUser,
 };

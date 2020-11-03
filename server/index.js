@@ -6,6 +6,10 @@ const cors = require('cors');
 const path = require('path');
 const app = express();
 
+// Body Parser
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 // Routes
 const apiRoutes = require('./api/routes/api');
 
