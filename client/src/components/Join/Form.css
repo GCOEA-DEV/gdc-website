@@ -55,6 +55,10 @@ form input[type='submit']:disabled {
   cursor: pointer;
 }
 
+.message-res {
+  flex: 2;
+}
+
 @keyframes slide-down {
   from {
     transform: translateY(-20%);
