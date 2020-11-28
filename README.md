@@ -1,7 +1,7 @@
 # Gcoea Developers Club
-Official Gcoea Developers Club 🚀 website made with Reactjs and Nodejs.  
+⭐ Official Gcoea Developers Club website made w/ Reactjs and Nodejs.  
 
-### Run / Test 🛠
+## Quickstart
 Clone the repository
 ```
 git clone https://github.com/GCOEA-DEV/gdc-website.git
@@ -19,7 +19,7 @@ Run and preview the application
 npm run dev
 ```
 
-### Todos 📋
+## Todos
 - [X] Split the project files into client and server
 - [X] Setup React Router
 - [X] Add Homepage
@@ -35,8 +35,9 @@ npm run dev
 
 More todos will be added later . . 
 
-### Contributing
+## Contributing
+All pull requests must be made to `development` branch.
 Feel free to raise any issues / bugs & contribute to project.
 
-### Join the developers club 🤖
+## Join the gang
 Just go to this [link](https://gcoeadevclub.herokuapp.com) and fill the form we will send you invite link to our workspace.
